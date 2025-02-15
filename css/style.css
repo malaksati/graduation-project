@@ -1,0 +1,118 @@
+input:focus {
+    outline: none !important;
+    border-color: var(--bs-border-color) !important;
+    box-shadow: none !important;
+}
+
+
+/* Navbar */
+.nav-logo {
+    width: 60px;
+}
+.nav-icons li a i{
+    width: 35px;
+    height: 35px;
+}
+
+/* Semester Info */
+
+.advisor .info .courses input,
+.advisor .info .courses label {
+    width: fit-content;
+}
+.advisor .image {
+    padding-top: 60px;
+}
+.advisor .image img {
+    position: relative;
+    animation: up-and-down 4s linear infinite;
+}
+@keyframes up-and-down {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: -60px;
+    }
+}
+
+/* Default Schedule */
+.enter-schedule .input-schedule {
+    padding: 5px 10px;
+    border: 0;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    background-color: transparent;
+}
+.enter-schedule .input-schedule:focus {
+    outline: 0;
+}
+.enter-schedule .plus {
+    border-bottom-width: 0;
+}
+
+
+/* login */
+.login .image {
+    margin-top: 90px;
+}
+.login .image img {
+    width: 150px;
+}
+.login p,
+.forget-password p {
+    width: fit-content;
+}
+
+.forget-password .image img {
+    margin-top: 2rem;
+    width: 100px;
+}
+.forget-password .code input {
+    width: calc(100% / 7);
+    font-size: 1.25rem;
+    text-align: center;
+}
+.forget-password .code input[type="number"]::-webkit-inner-spin-button,
+.forget-password .code input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.forget-password #submit-email {
+    width: fit-content;
+}
+
+
+/* request-dep */
+.request-dep textarea {
+    height: 100px;
+}
+
+td {
+    align-content: center;
+}
+.student td:nth-of-type(2),
+.student td:nth-of-type(3) {
+    width: 30%;
+}
+.student table {
+    width: 90%;
+    margin: 0 auto;
+}
+.student .schedule p {
+    width: 90%;
+    margin: 1rem auto 0.5rem;
+}
+.student div.heading-schedule {
+    width: 90%;
+    margin: auto;
+}
+.student .heading-schedule img{
+    width: 6rem;
+}
+
+.admin .dashboard #departments-table{
+    width: 40%;
+}
+nav .nav-icons li:nth-of-type(1) {
+    align-content: center;
+}
