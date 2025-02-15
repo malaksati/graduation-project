@@ -3,6 +3,9 @@ input:focus {
     border-color: var(--bs-border-color) !important;
     box-shadow: none !important;
 }
+.w-60 {
+    width: 60% !important;
+}
 
 
 /* Navbar */
@@ -115,4 +118,13 @@ td {
 }
 nav .nav-icons li:nth-of-type(1) {
     align-content: center;
+}
+
+
+/* financial-manager */     
+.financial-manager .chart-container {
+    position: relative;
+    /* height: 50vh; */
+    width: 75%;
+    margin: 1rem auto;
 }

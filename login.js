@@ -10,13 +10,25 @@ function sendLoginData() {
     }else{
         sessionStorage.setItem('email', email);
         sessionStorage.setItem('password', password);
-        if (email === 'admin' && password === 'admin') {
+        if (email === 'admin' && password === '123456') {
             window.location.href = 'admin/dashboard.html';
-        }else if (email === 'advisor' && password === 'advisor') {
+        }else if (email === 'advisor' && password === '123456') {
             window.location.href = 'advisor/dashboard.html';
         }
-        else if (email === 'student' && password === 'student') {
+        else if (email === 'student' && password === '123456') {
             window.location.href = 'student/schedule.html';
+        }
+        else if (email === 'financialaffairs' && password === '123456') {
+            window.location.href = 'financial_affairs/details.html';
+        }
+        else if (email === 'managerfinancial' && password === '123456') {
+            window.location.href = 'financial_affairs/manager/home.html';
+        }
+        else if (email === 'managerstudent' && password === '123456') {
+            window.location.href = 'student_affairs/manager/home.html';
+        }
+        else if (email === 'studentaffairs' && password === '123456') {
+            window.location.href = 'student_affairs/applications.html';
         }
         else{
             alert('Invalid email or password');
