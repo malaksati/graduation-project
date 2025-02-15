@@ -116,5 +116,5 @@ async function SendPassword () {
     validationMessage.innerHTML = "Password successfully changed!";
     validationMessage.classList.remove("text-danger");
     validationMessage.classList.add("text-success");
-    window.location.href = "../../login.html";
+    window.location.href = "../login.html";
 }

@@ -34,7 +34,7 @@
                 </ul>
                 <ul class="nav-icons navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="../logout.html">Logout</a>
+                        <a class="nav-link" href="" id="logout">Logout</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href=""><i
@@ -52,6 +52,13 @@
             </div>
         </div>
     </nav>
+    <script>
+        document.getElementById("logout").onclick = function (event) {
+        event.preventDefault();
+        sessionStorage.clear();
+        window.location.href = '../login.html';
+    }
+    </script>
         <!-- local js -->
         <script src="advisor.js"></script>
         <!-- js bootstrap 5.3 -->
