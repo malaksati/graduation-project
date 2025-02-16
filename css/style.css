@@ -128,3 +128,36 @@ nav .nav-icons li:nth-of-type(1) {
     width: 75%;
     margin: 1rem auto;
 }
+
+.receipt .receipt-form input {
+    width: 80%;
+}
+
+.bb-1 {
+    border: none !important;
+    border-bottom: 1px solid rgb(131, 131, 131) !important;
+    border-radius: 0% !important;
+}
+.br-1 {
+    border-right: 1px solid black !important;
+}
+.w-35 {
+    width: 35% !important;
+}
+.w-80 {
+    width: 80% !important;
+}
+.receipt-form {
+    width: 75% !important;
+}
+@media (max-width:991px) {
+    .receipt-form {
+        width: 100% !important;
+    }
+    .w-sm-40 {
+        width: 40% !important;
+    }
+    .receipt-form .header-form {
+        font-size: small !important;
+    }
+}
