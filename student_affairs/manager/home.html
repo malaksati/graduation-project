@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Statistics</title>
+    <link rel="shortcut icon" href="../../images/advisorylogo no stroke .png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="nav-logo" src="../../images/advisorylogo no stroke .png"
+                    alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Statistics</a>
+                    </li>
+                </ul>
+                <ul class="nav-icons navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../profile.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../help.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-solid fa-question"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="financial-manager">
+        <div class="container py-3">
+            <h2 class="text-center">Statistics</h2>
+            <h4 class="text-center">College: Computer Science & Artificial Intillegence</h4>
+            <p class="text-center fs-4">Students of Fall 2024</p>
+            <div class="table-responsive w-75 mx-auto">
+                <table class="table table-hover" id="std-stats">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>CGPA</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="text-center mt-2">
+                <button class="btn btn-primary btn-lg m-auto" onclick="window.print()">Print</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById("logout").onclick = function (event) {
+            event.preventDefault();
+            sessionStorage.clear();
+            window.location.href = '../../login.html';
+        }
+    </script>
+    <!-- local js -->
+    <script src="../main.js"></script>
+</body>
+
+</html>

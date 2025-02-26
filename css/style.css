@@ -1,0 +1,284 @@
+input:focus {
+    outline: none !important;
+    border-color: var(--bs-border-color) !important;
+    box-shadow: none !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+
+/* Navbar */
+.nav-logo {
+    width: 60px;
+}
+
+.nav-icons li a i {
+    width: 35px;
+    height: 35px;
+}
+
+/* Semester Info */
+
+.advisor .info .courses input,
+.advisor .info .courses label {
+    width: fit-content;
+}
+
+.advisor .image {
+    padding-top: 60px;
+}
+
+.advisor .image img {
+    position: relative;
+    animation: up-and-down 4s linear infinite;
+}
+
+@keyframes up-and-down {
+
+    0%,
+    100% {
+        top: 0;
+    }
+
+    50% {
+        top: -60px;
+    }
+}
+
+/* Default Schedule */
+.enter-schedule .input-schedule {
+    padding: 5px 10px;
+    border: 0;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    background-color: transparent;
+}
+
+.enter-schedule .input-schedule:focus {
+    outline: 0;
+}
+
+.enter-schedule .plus {
+    border-bottom-width: 0;
+}
+
+
+/* login */
+.login .image {
+    margin-top: 90px;
+}
+
+.login .image img {
+    width: 150px;
+}
+
+.login p,
+.forget-password p {
+    width: fit-content;
+}
+
+.forget-password .image img {
+    margin-top: 2rem;
+    width: 100px;
+}
+
+.forget-password .code input {
+    width: calc(100% / 7);
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.forget-password .code input[type="number"]::-webkit-inner-spin-button,
+.forget-password .code input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.forget-password #submit-email {
+    width: fit-content;
+}
+
+
+/* request-dep */
+.request-dep textarea {
+    height: 100px;
+}
+
+td {
+    align-content: center;
+}
+
+.student td:nth-of-type(2),
+.student td:nth-of-type(3) {
+    width: 30%;
+}
+
+.student table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.student .schedule p {
+    width: 90%;
+    margin: 1rem auto 0.5rem;
+}
+
+.student div.heading-schedule {
+    width: 90%;
+    margin: auto;
+}
+
+.student .heading-schedule img {
+    width: 6rem;
+}
+
+.admin .dashboard #departments-table {
+    width: 40%;
+}
+
+nav .nav-icons li:nth-of-type(1) {
+    align-content: center;
+}
+
+
+/* financial-manager */
+.financial-manager .chart-container {
+    position: relative;
+    /* height: 50vh; */
+    width: 75%;
+    margin: 1rem auto;
+}
+
+.receipt .receipt-form input {
+    width: 80%;
+}
+
+.bb-1 {
+    border: none !important;
+    border-bottom: 1px solid rgb(131, 131, 131) !important;
+    border-radius: 0% !important;
+}
+
+.br-1 {
+    border-right: 1px solid black !important;
+}
+
+.w-35 {
+    width: 35% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.receipt-form {
+    width: 75% !important;
+}
+
+@media (max-width:991px) {
+    .receipt-form {
+        width: 100% !important;
+    }
+
+    .w-sm-40 {
+        width: 40% !important;
+    }
+
+    .receipt-form .header-form {
+        font-size: small !important;
+    }
+}
+
+.followup .table thead th {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.followup .table tbody td {
+    text-align: center;
+}
+
+.followup .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.followup .header-left {
+    text-align: left;
+}
+
+.followup .header-right img {
+    width: 100px;
+}
+
+.followup .table td {
+    height: 50px;
+    min-width: 40px;
+}
+
+.profile .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+.profile .profile-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.profile .profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.profile .profile-info {
+    flex: 1;
+}
+.profile .info-box {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.inst .input-box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.doctor-schedule .table-container {
+    max-width: 700px;
+    margin: auto;
+}
+.doctor-schedule .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.doctor-schedule .notes {
+    margin-top: 40px;
+    font-size: 16px;
+    direction: rtl;
+    text-align: center;
+    font-weight: bold;
+}
+.doctor-schedule .signature {
+    margin-top: 30px;
+    direction: rtl;
+    text-align: left;
+    font-weight: bold;
+}
+.doctor-schedule thead {
+    background-color: #ADD8E6 !important;
+    color: black;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Receipt</title>
+    <link rel="shortcut icon" href="../images/advisorylogo no stroke .png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="nav-logo" src="../images/advisorylogo no stroke .png"
+                    alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="details.html">Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="petition_request.html">Petiton Request</a>
+                    </li>
+                </ul>
+                <ul class="nav-icons navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../help.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-solid fa-question"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="financial-affairs receipt">
+        <div class="container py-4">
+            <h2 class="text-center mb-4">Tuition Receipt</h2>
+
+            <form class="receipt-form m-auto">
+                <div class="d-flex justify-content-between px-5 fs-5" style="direction: rtl;">
+                    <div>
+                        <label for="">Registration</label>
+                        <span id="semester"></span>
+                    </div>
+                    <div>
+                        <span id="date3"></span>
+                    </div>
+                </div>
+                <div class="bg-body-secondary p-2">
+                    <div class="header-form d-flex justify-content-start align-items-center gap-2 w-100">
+                        <div class="d-flex gap-1 w-60 justify-content-start align-items-center">
+                            <label for="receiptNo" class="p-1 w-35"
+                                style="background-color: rgb(199, 199, 199);">Receipt
+                                No</label>
+                            <input type="text" class="form-control bg-transparent border-0" id="receiptNo" readonly>
+                        </div>
+                        <div class="d-flex gap-1 w-80 justify-content-start align-items-center">
+                            <label for="college-name" class="p-1 w-35"
+                                style="background-color: rgb(199, 199, 199);">College
+                                Name</label>
+                            <input type="text" class="form-control bg-transparent border-0" id="college-name" readonly>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex gap-1 w-100 justify-content-start align-items-center">
+                            <label for="fees" class="p-1">Amount /</label>
+                            <input type="text" style="width: 5rem;" class="form-control bg-transparent border-0"
+                                id="fees" readonly>
+                            <input type="text" class="bb-1 form-control w-50 bg-transparent " id="fees-text">
+                        </div>
+                        <div class="d-flex gap-1 w-100 justify-content-start align-items-center">
+                            <label for="fees-text" class="p-1">It's Value /</label>
+                            <input type="text" class="bb-1 form-control w-50 bg-transparent " id="fees-text">
+                        </div>
+                        <div class="d-flex gap-1 w-100 justify-content-start align-items-center">
+                            <div class="d-flex gap-1 w-100 justify-content-start align-items-center">
+                                <label for="date1" class="p-1 w-35">Due Date /</label>
+                                <input type="text" class="form-control bg-transparent border-0" id="date1" readonly>
+                            </div>
+                            <div class="d-flex gap-1 w-100 justify-content-start align-items-center">
+                                <label for="date2" class="p-1 w-35">Payment Date /</label>
+                                <input type="text" class="form-control bg-transparent border-0" id="date2" readonly>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-1 w-100 justify-content-start align-items-center">
+                            <div class="d-flex gap-1 w-100 justify-content-start align-items-center">
+                                <label for="name" class="p-1 w-35">Student Name /</label>
+                                <input type="text" class="form-control bg-transparent border-0" id="name" readonly>
+                            </div>
+                            <div class="d-flex gap-1 w-100 justify-content-start align-items-center">
+                                <label for="reg-year" class="p-1 w-35">Class /</label>
+                                <input type="text" class="form-control bg-transparent border-0" id="reg-year" readonly>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-1 w-100 justify-content-start align-items-center mb-5">
+                            <div class="d-flex gap-1 w-50 justify-content-start align-items-center">
+                                <label for="finanName" class="p-1 w-35">Emplyee Name /</label>
+                                <input type="text" class="bb-1 form-control w-50 bg-transparent " id="finanName">
+                            </div>
+                            <div class="d-flex gap-1 w-sm-40 justify-content-start align-items-center" style="width:25%">
+                                <label for="level" class="p-1 w-35">Level</label>
+                                <input type="number" class="text-center form-control w-25 border-0" id="level" readonly>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-5 w-100 justify-content-center text-center align-items-center mb-5">
+                            <div>
+                                <label for="finsignature" class="">Financial Affairs Signature</label>
+                                <input type="text" class="w-100 bb-1 form-control bg-transparent " id="finsignature">
+                            </div>
+                            <div>
+                                <label for="stdsignature">Student Affairs Signature</label>
+                                <input type="text" class="w-100 bb-1 form-control bg-transparent " id="stdsignature">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center fs-5">
+                    <div class="col br-1">
+                        Call 27272145 / 27272146
+                    </div>
+                    <div class="col br-1">
+                        info@mti.edu.eh
+                    </div>
+                    <div class="col br-1">
+                        http://www.mti.edu.eg
+                    </div>
+                    <div class="col">
+                        19041 HOTLINE
+                    </div>
+                </div>
+                <div class="d-flex gap-5 justify-content-around align-items-center mt-5">
+                    <button class="btn w-25 btn-lg btn-primary" onclick="sendReceipt()" type="button">Confirm</button>
+                    <button class="btn w-25 btn-lg btn-primary" onclick="window.print()" type="button">Print</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        document.getElementById("logout").onclick = function (event) {
+            event.preventDefault();
+            sessionStorage.clear();
+            window.location.href = '../login.html';
+        }
+    </script>
+    <!-- local js -->
+    <script src="financial.js"></script>
+    <!-- js bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3414da49bf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

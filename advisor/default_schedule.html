@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Schedule</title>
+    <link rel="shortcut icon" href="../images/advisorylogo no stroke .png" type="image/x-icon">
+    <!-- local style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- style bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="nav-logo" src="../images/advisorylogo no stroke .png"
+                    alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Semester info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+                <ul class="nav-icons navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../help.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-solid fa-question"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="advisor">
+        <div class="container py-3 enter-schedule">
+            <div class="back-button position-absolute">
+                <a class="text-primary m-3 d-block" href="semester_info.html"><i
+                        class="fa-2x fa-solid fa-arrow-left"></i></a>
+            </div>
+            <h1 class="heading text-center m-1">Enter Default Schedule</h1>
+            <div class="w-100 my-3 d-flex justify-content-around">
+                <p class="fs-3">Level: <span class="fw-bold" id="level_schedule"></span></p>
+                <p class="fs-3">Semester: <span class="fw-bold" id="semster_schedule"></span></p>
+            </div>
+            <form id="schedule-form">
+                <div class="schedule">
+                    <p id="Saturday" class="day fs-5 fw-bold">Saturday</p>
+                    <table class="table scheduleTable" id="scheduleTable">
+                        <thead>
+                            <tr class="table-secondary">
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Instructor</th>
+                                <th>Place</th>
+                                <th>Type</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <select class="input-schedule code_co" name="code-Saturday"></select>
+                                </td>
+                                <td>
+                                    <select class="input-schedule title" name="course-Saturday"></select>
+                                </td>
+                                <td><input type="text" class="input-schedule" name="instructor-Saturday"
+                                        placeholder="Instructor"></td>
+                                <td><input type="text" class="input-schedule" name="place-Saturday" placeholder="Place">
+                                </td>
+                                <td>
+                                    <select name="type-Saturday" class="input-schedule" id="">
+                                        <option value="L">L</option>
+                                        <option value="Ex">Ex</option>
+                                        <option value="Lab">Lab</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="time-Saturday" class="input-schedule">
+                                        <option value="1">09:00 - 10:15</option>
+                                        <option value="2">10:20 - 11:35</option>
+                                        <option value="3">11:40 - 12:55</option>
+                                        <option value="4">13:00 - 14:15</option>
+                                        <option value="5">14:20 - 15:35</option>
+                                    </select>
+                                </td>
+                                <td class="plus"><button onclick="addRow('Saturday')" class="btn"><i
+                                            class="fa-solid fa-plus"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p id="Sunday" class="day fs-5 fw-bold">Sunday</p>
+                    <table class="table">
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="input-schedule code_co" name="code-Sunday"></select>
+                            </td>
+                            <td>
+                                <select class="input-schedule title" name="course-Sunday"></select>
+                            </td>
+                            <td><input type="text" class="input-schedule" name="instructor-Sunday"
+                                    placeholder="Instructor"></td>
+                            <td><input type="text" class="input-schedule" name="place-Sunday" placeholder="Place"></td>
+                            <td>
+                                <select name="type-Sunday" class="input-schedule" id="">
+                                    <option value="L">L</option>
+                                    <option value="Ex">Ex</option>
+                                    <option value="Lab">Lab</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="time-Sunday" class="input-schedule">
+                                    <option value="1">09:00 - 10:15</option>
+                                    <option value="2">10:20 - 11:35</option>
+                                    <option value="3">11:40 - 12:55</option>
+                                    <option value="4">13:00 - 14:15</option>
+                                    <option value="5">14:20 - 15:35</option>
+                                </select>
+                            </td>
+                            <td class="plus"><button onclick="addRow('Sunday')" class="btn"><i
+                                        class="fa-solid fa-plus"></i></button></td>
+                        </tr>
+                    </table>
+                    <p id="Monday" class="day fs-5 fw-bold">Monday</p>
+                    <table class="table">
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="input-schedule code_co" name="code-Monday"></select>
+                            </td>
+                            <td>
+                                <select class="input-schedule title" name="course-Monday"></select>
+                            </td>
+                            <td><input type="text" class="input-schedule" name="instructor-Monday"
+                                    placeholder="Instructor"></td>
+                            <td><input type="text" class="input-schedule" name="instructor-Monday" placeholder="Place">
+                            </td>
+                            <td>
+                                <select name="type-Monday" class="input-schedule" id="">
+                                    <option value="L">L</option>
+                                    <option value="Ex">Ex</option>
+                                    <option value="Lab">Lab</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="time-Monday" class="input-schedule">
+                                    <option value="1">09:00 - 10:15</option>
+                                    <option value="2">10:20 - 11:35</option>
+                                    <option value="3">11:40 - 12:55</option>
+                                    <option value="4">13:00 - 14:15</option>
+                                    <option value="5">14:20 - 15:35</option>
+                                </select>
+                            </td>
+                            <td class="plus"><button onclick="addRow('Monday')" class="btn"><i
+                                        class="fa-solid fa-plus"></i></button></td>
+                        </tr>
+                    </table>
+                    <p id="Tuesday" class="day fs-5 fw-bold">Tuesday</p>
+                    <table class="table">
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="input-schedule code_co" name="code-Tuesday"></select>
+                            </td>
+                            <td>
+                                <select class="input-schedule title" name="course-Tuesday"></select>
+                            </td>
+                            <td><input type="text" class="input-schedule" name="instructor-Tuesday"
+                                    placeholder="Instructor"></td>
+                            <td><input type="text" class="input-schedule" name="place-Tuesday" placeholder="Place"></td>
+                            <td>
+                                <select name="type-Tuesday" class="input-schedule">
+                                    <option value="L">L</option>
+                                    <option value="Ex">Ex</option>
+                                    <option value="Lab">Lab</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="time-Tuesday" class="input-schedule">
+                                    <option value="1">09:00 - 10:15</option>
+                                    <option value="2">10:20 - 11:35</option>
+                                    <option value="3">11:40 - 12:55</option>
+                                    <option value="4">13:00 - 14:15</option>
+                                    <option value="5">14:20 - 15:35</option>
+                                </select>
+                            </td>
+                            <td class="plus"><button onclick="addRow('Tuesday')" class="btn"><i
+                                        class="fa-solid fa-plus"></i></button></td>
+                        </tr>
+                    </table>
+                    <p id="Wednesday" class="day fs-5 fw-bold">Wednesday</p>
+                    <table class="table">
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="input-schedule code_co" name="code-Wednesday"></select>
+                            </td>
+                            <td>
+                                <select class="input-schedule title" name="course-Wednesday"></select>
+                            </td>
+                            <td><input type="text" class="input-schedule" name="instroctur-Wednesday"
+                                    placeholder="Instructor"></td>
+                            <td><input type="text" class="input-schedule" name="place-Wednesday" placeholder="Place">
+                            </td>
+                            <td>
+                                <select name="type-Wednesday" class="input-schedule" id="">
+                                    <option value="L">L</option>
+                                    <option value="Ex">Ex</option>
+                                    <option value="Lab">Lab</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="time-Wednesday" class="input-schedule">
+                                    <option value="1">09:00 - 10:15</option>
+                                    <option value="2">10:20 - 11:35</option>
+                                    <option value="3">11:40 - 12:55</option>
+                                    <option value="4">13:00 - 14:15</option>
+                                    <option value="5">14:20 - 15:35</option>
+                                </select>
+                            </td>
+                            <td class="plus"><button onclick="addRow('Wednesday')" class="btn"><i
+                                        class="fa-solid fa-plus"></i></button></td>
+                        </tr>
+                    </table>
+                    <p id="Thursday" class="day fs-5 fw-bold">Thursday</p>
+                    <table class="table">
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="input-schedule code_co" name="code-Thursday"></select>
+                            </td>
+                            <td>
+                                <select class="input-schedule title" name="course-Thursday"></select>
+                            </td>
+                            <td><input type="text" class="input-schedule" name="instructor-Thursday"
+                                    placeholder="Instructor"></td>
+                            <td><input type="text" class="input-schedule" name="place-Thursday" placeholder="Place">
+                            </td>
+                            <td>
+                                <select name="type-Thursday" class="input-schedule" id="">
+                                    <option value="L">L</option>
+                                    <option value="Ex">Ex</option>
+                                    <option value="Lab">Lab</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="time-Thursday" class="input-schedule">
+                                    <option value="1">09:00 - 10:15</option>
+                                    <option value="2">10:20 - 11:35</option>
+                                    <option value="3">11:40 - 12:55</option>
+                                    <option value="4">13:00 - 14:15</option>
+                                    <option value="5">14:20 - 15:35</option>
+                                </select>
+                            </td>
+                            <td class="plus"><button onclick="addRow('Thursday')" class="btn"><i
+                                        class="fa-solid fa-plus"></i></button></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <input class="btn btn-primary m-auto d-block w-25 fs-5" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("schedule-form").addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            let scheduleData = [];
+            const ddays = [
+                "Saturday",
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+            ];
+            ddays.forEach((day) => {
+                let codeElements = document.getElementsByName(`code-${day}[]`);
+                let courseElements = document.getElementsByName(`course-${day}[]`);
+                let instructorElements = document.getElementsByName(
+                    `instructor-${day}[]`
+                );
+                let placeElements = document.getElementsByName(`place-${day}[]`);
+                let typeElements = document.getElementsByName(`type-${day}[]`);
+                let timeElements = document.getElementsByName(`time-${day}[]`);
+
+                let daySchedule = [];
+
+                for (let i = 0; i < codeElements.length; i++) {
+                    daySchedule.push({
+                        code: codeElements[i].value.trim(),
+                        course: courseElements[i].value.trim(),
+                        instructor: instructorElements[i].value.trim(),
+                        place: placeElements[i].value.trim(),
+                        type: typeElements[i].value.trim(),
+                        time: timeElements[i].value.trim(),
+                    });
+                }
+
+                if (daySchedule.length > 0) {
+                    scheduleData.push({ day, courses: daySchedule });
+                }
+
+                console.log("Schedule Data:", scheduleData);
+
+            });
+        });
+        window.onload = function () {
+            const level = sessionStorage.getItem('level');
+            const semester = sessionStorage.getItem('semester');
+            const strcourses = sessionStorage.getItem('courses');
+            let courses = strcourses.split(",");
+            courses.forEach((course, index) => {
+                if (document.querySelectorAll(".code_co").values.length == 0) {
+                    document.querySelectorAll(".code_co").forEach((v) => {
+                        v.innerHTML += `<option value="${index + 1}">${index + 1}</option>`;
+                    });
+                }
+                if (document.querySelectorAll(".title").values.length == 0) {
+                    document.querySelectorAll(".title").forEach((v) => {
+                        v.innerHTML += `<option value="${index + 1}">${course}</option>`;
+                    });
+                }
+            });
+            document.getElementById("level_schedule").innerText = level;
+            document.getElementById("semster_schedule").innerText = semester;
+        };
+        document.getElementById("logout").onclick = function (event) {
+            event.preventDefault();
+            sessionStorage.clear();
+            window.location.href = '../login.html';
+        }
+    </script>
+    <!-- local js -->
+    <script src="advisor.js"></script>
+    <!-- js bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3414da49bf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="shortcut icon" href="../images/advisorylogo no stroke .png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="nav-logo" src="../images/advisorylogo no stroke .png"
+                    alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="applications.html">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="receipts.html">Receipts</a>
+                    </li>
+                </ul>
+                <ul class="nav-icons navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../help.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-solid fa-question"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-start py-5">
+        <div class="w-50 m-auto bg-white ">
+            <h2 class="text-center mb-4">Application</h2>
+            <div class="card p-3 shadow">
+                <div class="mb-2">
+                    <label class="form-label">First Name:</label>
+                    <span id="FirstName"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Middle Name:</label>
+                    <span id="MiddleName"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Last Name:</label>
+                    <span id="LastName"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">E-Mail:</label>
+                    <span id="Email"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Phone Number:</label>
+                    <span id="Phone"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Address:</label>
+                    <span id="Address"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">College:</label>
+                    <span id="College"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Date of Birth:</label>
+                    <span id="Birth"></span>
+                </div>
+
+                <div>
+                    <label class="form-label">Gender:</label>
+                    <span id="Gender"></span>
+                </div>
+
+                <div class="d-flex justify-content-around align-items-center">
+                    <button class="btn btn-success" onclick="alert('Send Successfuly')">Accept</button>
+                    <button class="btn btn-danger" onclick="alert('Send Successfuly')">Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- local js -->
+    <script>
+        document.getElementById("logout").onclick = function (event) {
+            event.preventDefault();
+            sessionStorage.clear();
+            window.location.href = '../login.html';
+        }
+
+        const appData = JSON.parse(sessionStorage.getItem("appData"));
+        const params = new URLSearchParams(window.location.search);
+        const appId = params.get("id");
+        if (appData) {
+            var app = appData.find((app) => app.id == appId);
+            document.getElementById("FirstName").innerText = app.FirstName;
+            document.getElementById("MiddleName").innerText = app.MiddleName;
+            document.getElementById("LastName").innerText = app.LastName;
+            document.getElementById("Email").innerText = app.Email;
+            document.getElementById("Phone").innerText = app.Phone;
+            document.getElementById("Address").innerText = app.Address;
+            document.getElementById("College").innerText = app.College;
+            document.getElementById("Birth").innerText = app.Birth;
+            document.getElementById("Gender").innerText = app.Gender;
+        }
+    </script>
+    <!-- js bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3414da49bf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

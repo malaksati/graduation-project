@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="shortcut icon" href="../images/advisorylogo no stroke .png" type="image/x-icon">
+    <!-- local style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- style bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="nav-logo" src="../images/advisorylogo no stroke .png"
+                    alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="semester_info.html">Semester info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                </ul>
+                <ul class="nav-icons navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../help.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-solid fa-question"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container add-department" style="width: 800px;">
+        <div class="back-button position-absolute">
+            <a class="text-primary m-3 d-block" href="dashboard.html"><i class="fa-2x fa-solid fa-arrow-left"></i></a>
+        </div>
+        <h1 class="fs-4 m-3 py-3 px-5">Add Department</h1>
+        <form action="" method="post" class="m-auto p-4">
+            <div class="mb-3">
+                <label class="form-label" for="Name">Department Name</label>
+                <input class="form-control" name="Name" id="Name" type="text">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="College">College</label>
+                <select class="form-control" name="College" id="College">
+                    <option value="0" selected>Choose..</option>
+                    <option value="Computers & Artificial Intelligence">Computers & Artificial Intelligence</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="Engineering">Engineering</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="Head">Head Department</label>
+                <select class="form-control" name="Head" id="Head">
+                    <option value="0" selected>Choose..</option>
+                    <option value="">Ahmed</option>
+                    <option value="">Mahmoud</option>
+                    <option value="">Sara</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Add</button>
+        </form>
+    </section>
+<script>
+</script>
+    <!-- js bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3414da49bf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester info</title>
+    <link rel="shortcut icon" href="../images/advisorylogo no stroke .png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="nav-logo" src="../images/advisorylogo no stroke .png"
+                    alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Schedule</a>
+                    </li>
+                </ul>
+                <ul class="nav-icons navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../help.html"><i
+                                class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-solid fa-question"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="student">
+        <div class="container py-3">
+            <div class="heading-schedule d-flex justify-content-between align-items-center">
+                <p class="p-0 fs-5 fw-bold semester">Semester of <span id="semester">Spring</span></p>
+                <img src="../images/Mti(Gray).png" alt="">
+            </div>
+            <h1 class="heading text-center m-1">Schedule of Classes</h1>
+            <div class="w-100 mt-1 d-flex justify-content-around">
+                <p class="fs-3 fw-bold mb-0">Level: <span id="level">2</span> <span id="dep">General</span></p>
+            </div>
+            <div class="schedule">
+                <p id="Saturday" class="day fs-5 fw-bold">Saturday</p>
+                <table class="table scheduleTable" id="scheduleTable">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CS231</td>
+                            <td>Algorithms and Data Structures</td>
+                            <td>Dr. Alaa Abd ElRehim</td>
+                            <td>L1</td>
+                            <td>L</td>
+                            <td>09:00 - 10:15</td>
+                        </tr>
+                        <tr>
+                            <td>CS214</td>
+                            <td>Object Oriented Programming 2</td>
+                            <td>Dr. Hanafy Mahmoud</td>
+                            <td>L2</td>
+                            <td>L</td>
+                            <td>11:40 - 12:55</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="Sunday" class="day fs-5 fw-bold">Sunday</p>
+                <table class="table">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IS341</td>
+                            <td>Modeling and Simulation</td>
+                            <td>Hazem Omar</td>
+                            <td>S2</td>
+                            <td>Ex</td>
+                            <td>13:00 - 14:15</td>
+                        </tr>
+                        <tr>
+                            <td>CS241</td>
+                            <td>Data Communication & Protocols</td>
+                            <td>Ghada Nady <br>Ahmed Magdy </td>
+                            <td>S2</td>
+                            <td>Ex</td>
+                            <td>13:00 - 14:15</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="Monday" class="day fs-5 fw-bold">Monday</p>
+                <table class="table">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CS212</td>
+                            <td>Theory of Computation</td>
+                            <td>Dr. Anwar Assal</td>
+                            <td>L1</td>
+                            <td>L</td>
+                            <td>09:00 - 10:15</td>
+                        </tr>
+                        <tr>
+                            <td>IS341</td>
+                            <td>Modeling and Simulation</td>
+                            <td>Dr. Rania Ahmed</td>
+                            <td>L1</td>
+                            <td>L</td>
+                            <td>11:40 - 12:55</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="Tuesday" class="day fs-5 fw-bold">Tuesday</p>
+                <table class="table">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CS214</td>
+                            <td>Object Oriented Programming 2</td>
+                            <td>Gerges Morad <br>Eman Taher</td>
+                            <td>Lab5</td>
+                            <td>Lab</td>
+                            <td>09:00 - 10:15</td>
+                        </tr>
+                        <tr>
+                            <td>CS212</td>
+                            <td>Theory of Computation</td>
+                            <td>Nada Yassin</td>
+                            <td>S1</td>
+                            <td>Ex</td>
+                            <td>13:00 - 14:15</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="Wednesday" class="day fs-5 fw-bold">Wednesday</p>
+                <table class="table">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CS241</td>
+                            <td>Data Communication & Protocols</td>
+                            <td>Dr. Hafez Abd ElWahab</td>
+                            <td>L3</td>
+                            <td>L</td>
+                            <td>09:00 - 10:15</td>
+                        </tr>
+                        <tr>
+                            <td>CS232</td>
+                            <td>File Organization & Processing</td>
+                            <td>Dr. Hanafy Mahmoud</td>
+                            <td>L3</td>
+                            <td>L</td>
+                            <td>11:40 - 12:55</td>
+                        </tr>
+                        <tr>
+                            <td>CS231</td>
+                            <td>Algorithms and Data Structures</td>
+                            <td>Nada El Sayed</td>
+                            <td>S4</td>
+                            <td>Ex</td>
+                            <td>13:00 - 14:15</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="Thursday" class="day fs-5 fw-bold">Thursday</p>
+                <table class="table">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th>Code</th>
+                            <th>Course Title</th>
+                            <th>Instructor</th>
+                            <th>Place</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CS232</td>
+                            <td>File Organization & Processing</td>
+                            <td>Gina Hamdy<br>Osama Hassan</td>
+                            <td>S7/Lab3</td>
+                            <td>Ex/Lab</td>
+                            <td>11:40 - 12:55</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- local js -->
+    <script>
+        document.getElementById("logout").onclick = function (event) {
+            event.preventDefault();
+            sessionStorage.clear();
+            window.location.href = '../login.html';
+        }
+    </script>
+    <script src="student.js"></script>
+    <!-- js bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3414da49bf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
