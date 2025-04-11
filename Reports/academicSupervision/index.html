@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Supervision Report</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container mt-5 py-5 shadow">
+        <div class="d-flex justify-content-between">
+            <img src="../images/Mti(Gray).png" alt="" style="width:60px;">
+            <img src="../images/advisorylogo no stroke .png" alt="" style="width:60px;">
+            <img src="../images/CS(Gray).png" alt="" style="width:60px;">
+        </div>
+        <h2 class="text-center mb-4">Academic Supervision Report</h2>
+
+        <form>
+            <!-- Institution & Department -->
+            <div class="mb-3">
+                <label class="form-label">Collage Name:</label>
+                <input type="text" class="form-control" name="institution_name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Department Name:</label>
+                <input type="text" class="form-control" name="department_name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Date:</label>
+                <input type="date" class="form-control" name="date">
+            </div>
+
+            <!-- Faculty Supervisor Details -->
+            <h4>Project Supervisor Details</h4>
+            <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input type="text" class="form-control" name="supervisor_name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Department:</label>
+                <input type="text" class="form-control" name="supervisor_department">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <input type="email" class="form-control" name="supervisor_email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone:</label>
+                <input type="tel" class="form-control" name="supervisor_phone">
+            </div>
+
+            <!-- Project Details -->
+            <h4>Project Details</h4>
+            <div class="mb-3">
+                <label class="form-label">Project Title:</label>
+                <input type="text" class="form-control" name="project_title">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Project Category:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="project_category" value="Research"> Research
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="project_category" value="Development">
+                    Development
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="project_category" value="Innovation">
+                    Innovation
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="project_category" value="Other"> Other
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Project Start Date:</label>
+                <input type="date" class="form-control" name="project_start_date">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Expected Completion Date:</label>
+                <input type="date" class="form-control" name="expected_completion_date">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Project Description:</label>
+                <textarea class="form-control" rows="3" name="project_description"></textarea>
+            </div>
+
+            <!-- Student Team Information -->
+            <h4>Student Team Information</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Major</th>
+                        <th>Year of Study</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="email" class="form-control"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Supervisor's Role & Responsibilities -->
+            <h4>Supervisor's Role & Responsibilities</h4>
+            <div class="mb-3">
+                <label class="form-label">Guidance Provided:</label>
+                <input type="text" class="form-control" name="guidance_provided">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Meetings Frequency:</label><br>
+                <select class="form-select" name="meetings_frequency">
+                    <option value="weekly">Weekly</option>
+                    <option value="biweekly">Biweekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+
+            <!-- Project Progress & Challenges -->
+            <h4>Project Progress & Challenges</h4>
+            <div class="mb-3">
+                <label class="form-label">Current Status:</label><br>
+                <select class="form-select" name="current_status">
+                    <option value="ongoing">Ongoing</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Achievements:</label>
+                <textarea class="form-control" rows="2" name="achievements"></textarea>
+            </div>
+
+            <!-- Final Outcome & Recommendations -->
+            <h4>Final Outcome & Recommendations</h4>
+            <div class="mb-3">
+                <label class="form-label">Expected Impact:</label>
+                <textarea class="form-control" rows="2" name="expected_impact"></textarea>
+            </div>
+
+            <!-- Signatures -->
+            <h4>Signatures</h4>
+            <div class="mb-3">
+                <label class="form-label">Faculty Dean:</label>
+                <input type="text" class="form-control" name="faculty_supervisor">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Department Head:</label>
+                <input type="text" class="form-control" name="department_head">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit Report</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Student Progress Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 py-5 shadow">
+        <div class="d-flex justify-content-between">
+            <img src="../images/Mti(Gray).png" alt="" style="width:60px;">
+            <img src="../images/advisorylogo no stroke .png" alt="" style="width:60px;">
+            <img src="../images/CS(Gray).png" alt="" style="width:60px;">
+        </div>
+        <h1 class="text-center mb-4">Individual Student Progress Report</h1>
+        <h2 class="text-center">MTI University</h2>
+        <p class="text-center">Department: <span id="departmentName">[Department Name]</span></p>
+        <p class="text-center">Date: <span id="reportDate">[MM/DD/YYYY]</span></p>
+
+        <h3>Student Information</h3>
+        <ul>
+            <li><strong>Student Name:</strong> <span id="studentName">[Full Name]</span></li>
+            <li><strong>Student ID:</strong> <span id="studentID">[Student ID]</span></li>
+            <li><strong>Major:</strong> <span id="studentMajor">[Student Major]</span></li>
+            <li><strong>Academic Advisor:</strong> <span id="advisorName">[Advisor Name]</span></li>
+            <li><strong>Current Semester:</strong> <span id="currentSemester">[Semester Name]</span></li>
+        </ul>
+
+        <h3>Enrollment Summary</h3>
+        <ul>
+            <li><strong>Total Required Credit Hours for Graduation:</strong> <span id="totalCredits">[Total Credits]</span></li>
+            <li><strong>Completed Credit Hours:</strong> <span id="completedCredits">[Completed Credits]</span></li>
+            <li><strong>Remaining Credit Hours:</strong> <span id="remainingCredits">[Remaining Credits]</span></li>
+        </ul>
+
+        <h3>Completed Courses</h3>
+        <table class="table table-bordered text-center">
+            <thead class="table-light">
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credit Hours</th>
+                    <th>Semester Taken</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="completedCourses">
+                <tr>
+                    <td>CS101</td>
+                    <td>Introduction to Programming</td>
+                    <td>3</td>
+                    <td>Fall 2023</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>MATH201</td>
+                    <td>Calculus II</td>
+                    <td>4</td>
+                    <td>Spring 2023</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>PHYS101</td>
+                    <td>General Physics I</td>
+                    <td>3</td>
+                    <td>Fall 2022</td>
+                    <td>B</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Current Enrolled Courses</h3>
+        <table class="table table-bordered text-center">
+            <thead class="table-light">
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credit Hours</th>
+                    <th>Instructor</th>
+                    <th>Semester</th>
+                </tr>
+            </thead>
+            <tbody id="enrolledCourses">
+                <tr>
+                    <td>CS301</td>
+                    <td>Data Structures</td>
+                    <td>3</td>
+                    <td>Dr. John Doe</td>
+                    <td>Spring 2024</td>
+                </tr>
+                <tr>
+                    <td>MATH301</td>
+                    <td>Linear Algebra</td>
+                    <td>3</td>
+                    <td>Dr. Jane Smith</td>
+                    <td>Spring 2024</td>
+                </tr>
+                <tr>
+                    <td>ENG102</td>
+                    <td>Technical Writing</td>
+                    <td>2</td>
+                    <td>Prof. Mark Lee</td>
+                    <td>Spring 2024</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Remaining Courses to Graduate</h3>
+        <table class="table table-bordered text-center">
+            <thead class="table-light">
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credit Hours</th>
+                    <th>Semester Planned</th>
+                </tr>
+            </thead>
+            <tbody id="remainingCourses">
+                <tr>
+                    <td>CS401</td>
+                    <td>Algorithms</td>
+                    <td>3</td>
+                    <td>Fall 2024</td>
+                </tr>
+                <tr>
+                    <td>CS402</td>
+                    <td>Operating Systems</td>
+                    <td>3</td>
+                    <td>Fall 2024</td>
+                </tr>
+                <tr>
+                    <td>CS499</td>
+                    <td>Senior Project</td>
+                    <td>4</td>
+                    <td>Spring 2025</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Remarks and Recommendations</h3>
+        <p id="remarks">Student is progressing well and on track for graduation. Recommended to take additional elective courses to fulfill graduation requirements. Meeting with an academic advisor is advised to ensure proper course selection.</p>
+        
+        <p class="mt-4"><strong>Academic Advisor Signature:</strong> _______________</p>
+        <p><strong>Date:</strong> _______________</p>
+    </div>
+</body>
+</html>

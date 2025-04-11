@@ -1,4 +1,4 @@
-if (window.location.pathname === "/financial_affairs/details.html") {
+// if (window.location.pathname === "/financial_affairs/details.html") {
 document
   .getElementById("search-id")
   .addEventListener("click", async function (event) {
@@ -101,7 +101,7 @@ document
       studentinfo.innerHTML = s;
     }
   });
-}
+// }
 if (window.location.pathname === "/financial_affairs/receipt.html") {
   var std = JSON.parse(sessionStorage.getItem("studentFees"));
   console.log(std)

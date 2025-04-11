@@ -53,57 +53,69 @@
 
     <div class="container d-flex justify-content-start py-5">
         <div class="w-50 m-auto bg-white ">
-            <h2 class="text-center mb-4">Application</h2>
-            <div class="card p-3 shadow">
-                <div class="mb-2">
-                    <label class="form-label">First Name:</label>
-                    <span id="FirstName"></span>
-                </div>
+            <h2 class="text-center mb-4">Application 1</h2>
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <td>First Name:</td>
+                    <td id="FirstName">Mohamed</td>
+                </tr>
 
-                <div class="mb-2">
-                    <label class="form-label">Middle Name:</label>
-                    <span id="MiddleName"></span>
-                </div>
+                <tr>
+                    <td>Middle Name:</td>
+                    <td id="MiddleName">Yasser</td>
+                </tr>
 
-                <div class="mb-2">
-                    <label class="form-label">Last Name:</label>
-                    <span id="LastName"></span>
-                </div>
+                <tr>
+                    <td>Last Name:</td>
+                    <td id="LastName">Mostafa</td>
+                </tr>
 
-                <div class="mb-2">
-                    <label class="form-label">E-Mail:</label>
-                    <span id="Email"></span>
-                </div>
+                <tr>
+                    <td>E-Mail:</td>
+                    <td id="Email">m@g.com</td>
+                </tr>
 
-                <div class="mb-2">
-                    <label class="form-label">Phone Number:</label>
-                    <span id="Phone"></span>
-                </div>
+                <tr>
+                    <td>Mobile Phone:</td>
+                    <td id="Phone">456987285</td>
+                </tr>
 
-                <div class="mb-2">
-                    <label class="form-label">Address:</label>
-                    <span id="Address"></span>
-                </div>
+                <tr>
+                    <td>Home Number:</td>
+                    <td id="Phone">56595269</td>
+                </tr>
 
-                <div class="mb-2">
-                    <label class="form-label">College:</label>
-                    <span id="College"></span>
-                </div>
+                <tr>
+                    <td>Address:</td>
+                    <td id="Address">Cairo</td>
+                </tr>
 
-                <div class="mb-2">
-                    <label class="form-label">Date of Birth:</label>
-                    <span id="Birth"></span>
-                </div>
+                <tr>
+                    <td>Choosen College:</td>
+                    <td id="College">Computers and ai</td>
+                </tr>
 
-                <div>
-                    <label class="form-label">Gender:</label>
-                    <span id="Gender"></span>
-                </div>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td id="Birth">23-05-2005</td>
+                </tr>
 
-                <div class="d-flex justify-content-around align-items-center">
-                    <button class="btn btn-success" onclick="alert('Send Successfuly')">Accept</button>
-                    <button class="btn btn-danger" onclick="alert('Send Successfuly')">Reject</button>
-                </div>
+                <tr>
+                    <td>High School Grade:</td>
+                    <td id="Birth">80</td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td id="Gender">Male</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="m-auto text-center">
+                    <button class="btn btn-success m-auto" onclick="alert('Send Successfuly')">Accept</button>
+                    <button class="btn btn-danger m-auto" onclick="alert('Send Successfuly')">Reject</button>
+                </td>
+                <tr>
             </div>
         </div>
     </div>
@@ -115,21 +127,7 @@
             window.location.href = '../login.html';
         }
 
-        const appData = JSON.parse(sessionStorage.getItem("appData"));
-        const params = new URLSearchParams(window.location.search);
-        const appId = params.get("id");
-        if (appData) {
-            var app = appData.find((app) => app.id == appId);
-            document.getElementById("FirstName").innerText = app.FirstName;
-            document.getElementById("MiddleName").innerText = app.MiddleName;
-            document.getElementById("LastName").innerText = app.LastName;
-            document.getElementById("Email").innerText = app.Email;
-            document.getElementById("Phone").innerText = app.Phone;
-            document.getElementById("Address").innerText = app.Address;
-            document.getElementById("College").innerText = app.College;
-            document.getElementById("Birth").innerText = app.Birth;
-            document.getElementById("Gender").innerText = app.Gender;
-        }
+        
     </script>
     <!-- js bootstrap 5.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

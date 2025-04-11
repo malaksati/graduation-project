@@ -29,7 +29,7 @@
                         <a class="nav-link" href="semester_info.html">Semester info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Requests</a>
+                        <a class="nav-link active" href="petiton_requests_table.html">Requests</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="dashboard.html">Dashboard</a>
@@ -58,17 +58,50 @@
 
     <section class="petition-request">
         <div class="container py-3">
+            <h1 class="fs-3 mb-4 text-center">Petition Requests</h1>
+            <div class="w-75 m-auto">
+                <table class="table table-hover table-striped" id="requests">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th>#</th>
+                            <th>College</th>
+                            <th>Result</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Computers and Artificial Intellegence</td>
+                            <td>In progress</td>
+                            <td><a class="btn btn-small btn-primary" href="petition_req data.html">Open</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Computers and Artificial Intellegence</td>
+                            <td>Completed</td>
+                            <td><a class="btn btn-small btn-primary" href="petition_req data.html">Open</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Computers and Artificial Intellegence</td>
+                            <td>Completed</td>
+                            <td><a class="btn btn-small btn-primary" href="petition_req data.html">Open</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             
         </div>
     </section>
-    
-<script>
-    document.getElementById("logout").onclick = function (event) {
-        event.preventDefault();
-        sessionStorage.clear();
-        window.location.href = '../login.html';
-    }
-</script>
+
+    <script>
+        document.getElementById("logout").onclick = function (event) {
+            event.preventDefault();
+            sessionStorage.clear();
+            window.location.href = '../login.html';
+        }
+    </script>
     <!-- local js -->
     <script src="student.js"></script>
     <!-- js bootstrap 5.3 -->

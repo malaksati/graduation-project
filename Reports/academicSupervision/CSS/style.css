@@ -1,0 +1,9 @@
+h2 {
+    color: #007bff;
+}
+
+.table input {
+    width: 100%;
+    border: none;
+    background: transparent;
+}

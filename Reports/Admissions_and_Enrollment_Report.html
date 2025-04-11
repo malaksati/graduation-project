@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions and Enrollment Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="my-3">
+        <div class="d-flex justify-content-between">
+            <img src="../images/Mti(Gray).png" alt="" style="width:100px;">
+            <img src="../images/advisorylogo no stroke .png" alt="" style="width:60px;">
+            <img src="../images/CS(Gray).png" alt="" style="width:60px;">
+        </div>
+        <h3 class="text-center my-2">Admissions and Enrollment Report</h3>
+        <h4 class="text-center">MTI University</h4>
+        <p class="text-center">Academic Year: <span id="academicYear">[Year]</span></p>
+        <p class="text-center">Report Date: <span id="reportDate">[Date]</span></p>
+
+        <h4>1. Summary of Admissions</h4>
+        <ul>
+            <li><strong>Total Applications Received:</strong> <span id="totalApplications">[Number]</span></li>
+            <li><strong>Total Applicants Admitted:</strong> <span id="totalAdmitted">[Number]</span></li>
+            <li><strong>Admission Rate:</strong> <span id="admissionRate">[Percentage]</span></li>
+            <li><strong>Total Applicants Enrolled:</strong> <span id="totalEnrolled">[Number]</span></li>
+            <li><strong>Enrollment Rate:</strong> <span id="enrollmentRate">[Percentage]</span></li>
+        </ul>
+
+        <h4>2. Enrollment Statistics by Program</h4>
+        <table class="table table-bordered text-center">
+            <thead class="table-light">
+                <tr>
+                    <th>Program Name</th>
+                    <th>Applications</th>
+                    <th>Admitted</th>
+                    <th>Enrolled</th>
+                    <th>Retention Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Program A</td>
+                    <td id="programAApplications">[Number]</td>
+                    <td id="programAAdmitted">[Number]</td>
+                    <td id="programAEnrolled">[Number]</td>
+                    <td id="programARetention">[Percentage]</td>
+                </tr>
+                <tr>
+                    <td>Program B</td>
+                    <td id="programBApplications">[Number]</td>
+                    <td id="programBAdmitted">[Number]</td>
+                    <td id="programBEnrolled">[Number]</td>
+                    <td id="programBRetention">[Percentage]</td>
+                </tr>
+                <tr>
+                    <td>Program C</td>
+                    <td id="programCApplications">[Number]</td>
+                    <td id="programCAdmitted">[Number]</td>
+                    <td id="programCEnrolled">[Number]</td>
+                    <td id="programCRetention">[Percentage]</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>3. Enrollment Demographics</h4>
+        <ul>
+            <li><strong>Gender Distribution:</strong></li>
+            <ul>
+                <li>Male: <span id="malePercentage">[Percentage]</span></li>
+                <li>Female: <span id="femalePercentage">[Percentage]</span></li>
+            </ul>
+            <li><strong>Age Distribution:</strong></li>
+            <ul>
+                <li>18-22 years: <span id="age18_22">[Percentage]</span></li>
+                <li>23-30 years: <span id="age23_30">[Percentage]</span></li>
+                <li>30+ years: <span id="age30Plus">[Percentage]</span></li>
+            </ul>
+        </ul>
+
+        <p class="mt-4"><strong>Prepared by:</strong> <span id="preparedBy">[Name]</span></p>
+    </div>
+</body>
+</html>

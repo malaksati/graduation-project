@@ -27,7 +27,7 @@
                         <a class="nav-link" href="applications.html">Applications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Receipts</a>
+                        <a class="nav-link active" href="receipts.html">Receipts</a>
                     </li>
                 </ul>
                 <ul class="nav-icons navbar-nav mb-2 mb-lg-0">
@@ -65,19 +65,51 @@
                             <th>Status</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>9902</td>
+                            <td>Mostafa Ali</td>
+                            <td>18000</td>
+                            <td>
+                                <a href="receipt.html" class="btn btn-small btn-primary">Open</a>
+                                <button onclick="window.print()" class="btn btn-small btn-secondary">Print</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>9903</td>
+                            <td>Sarah Ali</td>
+                            <td>18000</td>
+                            <td>
+                                <a href="receipt.html" class="btn btn-small btn-primary">Open</a>
+                                <button onclick="window.print()" class="btn btn-small btn-secondary">Print</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>9904</td>
+                            <td>Mohamed Ali</td>
+                            <td>18000</td>
+                            <td>
+                                <a href="receipt.html" class="btn btn-small btn-primary">Open</a>
+                                <button onclick="window.print()" class="btn btn-small btn-secondary">Print</button>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
     </section>
     <script>
         document.getElementById("logout").onclick = function (event) {
-        event.preventDefault();
-        sessionStorage.clear();
-        window.location.href = '../login.html';
-    }
+            event.preventDefault();
+            sessionStorage.clear();
+            window.location.href = '../login.html';
+        }
     </script>
     <!-- local js -->
-     <script src="main.js"></script>
+    <script src="main.js"></script>
     <!-- js bootstrap 5.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

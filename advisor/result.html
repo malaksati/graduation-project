@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- style bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        #form-result table th, table td {
+        #form-result table th,
+        table td {
             width: 14.28%;
             vertical-align: middle;
             text-align: center;
         }
+
         #form-result .radio-group {
             display: flex;
             flex-direction: column;
@@ -23,20 +26,24 @@
             justify-content: center;
             height: 100%;
         }
+
         #form-result .radio-group label {
             display: flex;
             align-items: center;
             gap: 5px;
         }
+
         #form-result .wide-input {
             width: 50%;
         }
+
         #form-result .review-signature {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 50%;
         }
+
         #form-result .button-group {
             display: flex;
             justify-content: center;
@@ -49,11 +56,12 @@
         }
     </script>
 </head>
-<body class="container mt-4 text-start">
+
+<body class="">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#"><img class="nav-logo" src="../images/advisorylogo no stroke .png"
-                    alt="logo" width="50"></a>
+                    alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -62,10 +70,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Semester info</a>
+                        <a class="nav-link" href="semester_info.html">Semester info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Requests</a>
+                        <a class="nav-link active" href="petiton_requests_table.html">Requests</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="dashboard.html">Dashboard</a>
@@ -80,127 +88,223 @@
                                 class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-bell"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i
+                        <a class="nav-link" href="../profile.html"><i
                                 class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-regular fa-user"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="help.html"><i
+                        <a class="nav-link" href="../help.html"><i
                                 class="border border-dark-subtle rounded-circle p-2 d-flex justify-content-center align-items-center fa-solid fa-question"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <form id="form-result">
-        <div class="mb-3">
-            <label class="form-label">Student Name:</label>
-            <input type="text" class="form-control wide-input" placeholder="Enter Student Name">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Subject:</label>
-            <input type="text" class="form-control wide-input" placeholder="Enter Subject Name">
-        </div>
-        
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Error in Correction</th>
-                    <th>Grade Application for Submitted Record</th>
-                    <th>Year Work Assessment</th>
-                    <th>Practical Exam Assessment</th>
-                    <th>Final Exam Assessment</th>
-                    <th>Total Grade</th>
-                    <th>Final Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="radio-group">
-                            <label><input type="radio" name="error"> Yes</label>
-                            <label><input type="radio" name="error"> No</label>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="radio-group">
-                            <label><input type="radio" name="application"> Applied</label>
-                            <label><input type="radio" name="application"> Not Applied</label>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="radio-group">
-                            <label><input type="radio" name="year_work"> More than Acceptable</label>
-                            <label><input type="radio" name="year_work"> Acceptable</label>
-                            <label><input type="radio" name="year_work"> Weak</label>
-                            <label><input type="radio" name="year_work"> Very Weak</label>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="radio-group">
-                            <label><input type="radio" name="practical_exam"> More than Acceptable</label>
-                            <label><input type="radio" name="practical_exam"> Acceptable</label>
-                            <label><input type="radio" name="practical_exam"> Weak</label>
-                            <label><input type="radio" name="practical_exam"> Very Weak</label>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="radio-group">
-                            <label><input type="radio" name="final_exam"> More than Acceptable</label>
-                            <label><input type="radio" name="final_exam"> Acceptable</label>
-                            <label><input type="radio" name="final_exam"> Weak</label>
-                            <label><input type="radio" name="final_exam"> Very Weak</label>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="radio-group">
-                            <label><input type="radio" name="total_grade"> Correct</label>
-                            <label><input type="radio" name="total_grade"> Incorrect</label>
-                        </div>
-                    </td>
-                    <td>
-                        <select class="form-control">
-                            <option value="A+">A+</option>
-                            <option value="A">A</option>
-                            <option value="A-">A-</option>
-                            <option value="B+">B+</option>
-                            <option value="B">B</option>
-                            <option value="B-">B-</option>
-                            <option value="C+">C+</option>
-                            <option value="C">C</option>
-                            <option value="C-">C-</option>
-                            <option value="D+">D+</option>
-                            <option value="D">D</option>
-                            <option value="F">F</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <div class="mb-3">
-            <label class="form-label">Notes:</label>
-            <textarea class="form-control" rows="3"></textarea>
-        </div>
-        
-        <div class="review-signature">
-            <div>
-                <label class="form-label">Reviewed by:</label>
-                <input type="text" class="form-control" placeholder="Enter Reviewer Name">
+    <div class="container my-4 text-start">
+        <form id="form-result" class="my-2">
+            <div class="mb-3">
+                <label class="form-label">Student Name:</label>
+                <span>name</span>
             </div>
+            <div class="mb-3">
+                <label class="form-label">Subject:</label>
+                <span>Numerical</span>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Error in Correction</th>
+                        <th>Grade Application for Submitted Record</th>
+                        <th>Year Work Assessment</th>
+                        <th>Practical Exam Assessment</th>
+                        <th>Final Exam Assessment</th>
+                        <th>Total Grade</th>
+                        <th>Final Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="error"> Yes</label>
+                                <label><input type="radio" name="error"> No</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="application"> Applied</label>
+                                <label><input type="radio" name="application"> Not Applied</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="year_work"> More than Acceptable</label>
+                                <label><input type="radio" name="year_work"> Acceptable</label>
+                                <label><input type="radio" name="year_work"> Weak</label>
+                                <label><input type="radio" name="year_work"> Very Weak</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="practical_exam"> More than Acceptable</label>
+                                <label><input type="radio" name="practical_exam"> Acceptable</label>
+                                <label><input type="radio" name="practical_exam"> Weak</label>
+                                <label><input type="radio" name="practical_exam"> Very Weak</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="final_exam"> More than Acceptable</label>
+                                <label><input type="radio" name="final_exam"> Acceptable</label>
+                                <label><input type="radio" name="final_exam"> Weak</label>
+                                <label><input type="radio" name="final_exam"> Very Weak</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="total_grade"> Correct</label>
+                                <label><input type="radio" name="total_grade"> Incorrect</label>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="form-control">
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="B-">B-</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="C-">C-</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="mb-3">
+                <label class="form-label">Notes:</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+
             <div>
                 <label class="form-label">Signature:</label>
                 <input type="text" class="form-control" placeholder="Enter Signature">
             </div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Recorded by:</label>
-            <input type="text" class="form-control wide-input" placeholder="Enter Recorder Name">
-        </div>
-        
-        <div class="button-group mt-3">
-            <button type="submit" class="btn btn-primary">Save</button>
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('form-result').reset()">Clear</button>
-        </div>
-    </form>
+
+            <div class="button-group mt-3">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary"
+                    onclick="document.getElementById('form-result').reset()">Clear</button>
+            </div>
+        </form>
+        <form id="form-result" class="my-2">
+            <div class="mb-3">
+                <label class="form-label">Student Name:</label>
+                <span>name</span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Subject:</label>
+                <span>Math</span>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Error in Correction</th>
+                        <th>Grade Application for Submitted Record</th>
+                        <th>Year Work Assessment</th>
+                        <th>Practical Exam Assessment</th>
+                        <th>Final Exam Assessment</th>
+                        <th>Total Grade</th>
+                        <th>Final Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="error"> Yes</label>
+                                <label><input type="radio" name="error"> No</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="application"> Applied</label>
+                                <label><input type="radio" name="application"> Not Applied</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="year_work"> More than Acceptable</label>
+                                <label><input type="radio" name="year_work"> Acceptable</label>
+                                <label><input type="radio" name="year_work"> Weak</label>
+                                <label><input type="radio" name="year_work"> Very Weak</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="practical_exam"> More than Acceptable</label>
+                                <label><input type="radio" name="practical_exam"> Acceptable</label>
+                                <label><input type="radio" name="practical_exam"> Weak</label>
+                                <label><input type="radio" name="practical_exam"> Very Weak</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="final_exam"> More than Acceptable</label>
+                                <label><input type="radio" name="final_exam"> Acceptable</label>
+                                <label><input type="radio" name="final_exam"> Weak</label>
+                                <label><input type="radio" name="final_exam"> Very Weak</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-group">
+                                <label><input type="radio" name="total_grade"> Correct</label>
+                                <label><input type="radio" name="total_grade"> Incorrect</label>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="form-control">
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="B-">B-</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="C-">C-</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="mb-3">
+                <label class="form-label">Notes:</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+
+            <div>
+                <label class="form-label">Signature:</label>
+                <input type="text" class="form-control" placeholder="Enter Signature">
+            </div>
+
+            <div class="button-group mt-3">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary"
+                    onclick="document.getElementById('form-result').reset()">Clear</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>

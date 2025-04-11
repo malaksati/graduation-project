@@ -1,0 +1,15 @@
+h2 {
+    color: #007bff;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.list-group-item {
+    font-weight: bold;
+}
+.container h5, .container p{
+    font-weight: 500;
+    line-height: 1.2;
+}
